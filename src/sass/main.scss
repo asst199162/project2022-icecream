@@ -4,4 +4,26 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+
+@import '../sass/base/reset'; //сброс стилей
+@import '../sass/utils/varibles'; //цвета
+@import '../sass/base/common'; //body
+
+@import '../sass/components/container';
+@import '../sass/components/sections';
+@import '../sass/components/icon';
+
+@import '../sass/layout/header';
+@import '../sass/layout/hero';
+@import '../sass/layout/products';
+@import '../sass/layout/about'; //4
+@import '../sass/layout/advantages';
+@import '../sass/layout/gallery'; //6
+@import '../sass/layout/reviews';
+@import '../sass/layout/contacts';//8
+@import '../sass/layout/footer';
+
+@import '../sass/layout/modal/backdrop';
+@import '../sass/layout/modal/modal';
+
+@import '../sass/layout/modmenu/mobmenu';
