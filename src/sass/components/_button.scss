@@ -1,0 +1,90 @@
+.btn {
+  border: none;
+  width: 104px;
+  height: 40px;
+  font-size: 14px;
+  position: relative;
+  background: #ecebeb;
+  color: #d41342;
+  border: 3px solid #ecebeb;
+  cursor: pointer;
+  transition: all 0.7s;
+  overflow: hidden;
+  border-radius: 100px;
+  z-index: 0;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ecebeb;
+  border: #d41342;
+  z-index: 0;
+}
+
+.button-span {
+  transition: all 0.7s;
+  z-index: -1;
+}
+
+.btn .first {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background: #d41342;
+}
+
+.btn:hover .first,
+.btn:focus .first {
+  top: 0;
+  right: 0;
+}
+.btn .second {
+  content: '';
+  position: absolute;
+  left: 25%;
+  top: -100%;
+  height: 100%;
+  width: 25%;
+  background: #d41342;
+}
+
+.btn:hover .second,
+.btn:focus .second {
+  top: 0;
+  left: 50%;
+}
+
+.btn .third {
+  content: '';
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  top: 100%;
+  width: 25%;
+  background: #d41342;
+}
+
+.btn:hover .third,
+.btn:focus .third {
+  top: 0;
+  left: 25%;
+}
+
+.btn .fourth {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  width: 25%;
+  background: #d41342;
+}
+
+.btn:hover .fourth,
+.btn:focus .fourth {
+  top: 0;
+  left: 0;
+}
