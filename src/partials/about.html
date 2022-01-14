@@ -1,5 +1,70 @@
 <div class="four">
-    <p>
-        about
-    </p>
+    <section class="about__section">
+        <div class="about__presentation"></div>
+            <p class="about__inscription">tradition and love</p>
+            <h2 class="about__title">how it’s<br>made?</h2>
+        </div>
+        <article class="about__article">
+            <picture class="about__img">
+                <source 
+                    srcset="images/about/cow-milk.png 1x, 
+                            images/about/cow-milk-2x.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                    >
+                    <source 
+                    srcset="images/about/cow-milk-tablet.png 1x, 
+                            images/about/cow-milk-tablet-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                    >
+                    <source 
+                    srcset="images/about/cow-milk-mobile.png 1x, 
+                            images/about/cow-milk-mobile-2x.png 2x
+                    "
+                    media="(min-width: 480px)"
+                    >
+                    <img class="about__image" src="images/about/cow-milk-mobile-2x.png" alt="Кувшин молока с коровой" />
+            </picture>
+            <div class="about__paragraph">
+                <p class="about__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
+                <p class="about__description">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.<br>
+                                            Aliquam erat volutpat. Aenean accumsan.</p>
+                <button type="button" class="about__button-open" data-menu-open>
+                    <p class="about__button-text">Read more</p>
+                    <svg class="mob-menu__icon--close" width="4.43" height="8">
+                        <use href="./images/svg/icon.svg#btn-arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </article>
+    </section>
+</div>
+
+<!-- About modal window -->
+<div class="about-menu is-hidden" data-menu>
+    <div class="about-menu__box">
+        <button type="button" class="about-menu__button-close" data-menu-close>
+            <svg class="about-menu__icon" width="14" height="14">
+                <use href="./images/svg/icon.svg#menu-close"></use>
+            </svg>
+        </button>
+        <p>
+
+        </p>
+        <ul class="mob-menu-social__list">
+            <li class="mob-menu-social__item">
+                <a class="mob-menu-social__link" href=""> Instagram</a>
+            </li>
+            <li class="mob-menu-social__item">
+                <a class="mob-menu-social__link" href="">Twitter</a>
+            </li>
+            <li class="mob-menu-social__item">
+                <a class="mob-menu-social__link" href="">Facebook</a>
+            </li>
+            <li class="mob-menu-social__item">
+                <a class="mob-menu-social__link" href="">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
 </div>
