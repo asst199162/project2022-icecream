@@ -1,7 +1,7 @@
 <section class="hero">
     <div class="container">
         <header class="header">
-            <img class="header__img" src="#" alt="logo">
+            <img class="header__img" src="images/header/logo.png" alt="logo">
             <ul class="header__list">
                 <li class="header__item">
                     <a href="#" class="header__link">Home</a>
@@ -19,8 +19,12 @@
                     <a href="#" class="header__link">Contact</a>
                 </li>
             </ul>
-            <button type="button" class="header__button">Buy now</button>
-            <button type="button" class="header__mob-button"></button>
+            <button type="button" class="header__mob-button" data-menu-open>
+                <svg class="header__mob-icon" width="24" height="16">
+                    <use href="images/svg/icon.svg/#mob-menu"></use>
+                </svg>
+            </button>
+            <button type="button" class="header__button" >Buy now</button>
         </header>
         
             <h1 class="hero__title">ice cream made with <span class="hero__span">passion</span> </h1>
@@ -29,9 +33,21 @@
             <button type="button" class="hero-btn__rigth">How it’s made?</button>
         </div>
         <div class="hero-down">
-            <img class="hero-down__img" src="#" alt="big milk">
-            <p class="hero-down__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et</p>
+            <picture>
+                <source srcset="
+                    images/hero/hero-milk-tablet.png 1x,
+                    images/hero/hero-milk-tablet-2x.png 2x" media="(min-width: 1200px)">
+
+                <img src="images/hero/hero-milk-tablet.png" alt="Человек печаетает" />                  
+            </picture>
+            <div class="hero-down__label">
+                <p class="hero-down__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et</p>
+                    <button type="button" class="hero-donw__btn">
+                        <svg class="hero-down__icon" width="10" height="10">
+                        <use href="images/svg/icon.svg/#arrow-right2"></use>
+                    </svg></button>
+            </div>
         </div>
         <div class="hero-rigth">
             <span class="hero-rigth__span">16</span>
@@ -40,4 +56,33 @@
             <p class="hero-rigth__text">food trucks</p>
         </div>
     </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <button type="button" class="mob-menu__btn-close" data-menu-close>
+                <svg class="mob-menu__icon" width="24" height="16">
+                    <use href="images/svg/icon.svg/#menu-close"></use>
+                </svg>
+            </button>
+            <button type="button" class="mob-menu__btn">Buy now
+                <svg width="20" height="10">
+                    <use href="images/svg/icon.svg/#btn-arrow"></use>
+                </svg>
+            </button>
+                <ul class="mob-menu__list">
+                    <li class="mob-menu__item">
+                        <a href="#" class="mob-menu__link">Home</a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a href="#" class="mob-menu__link">About us</a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a href="#" class="mob-menu__link">How it’s made?</a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a href="#" class="mob-menu__link">Our products</a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a href="#" class="mob-menu__link">Contact</a>
+                    </li>
+                </ul>
+        </div>
 </section>
