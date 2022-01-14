@@ -1,6 +1,7 @@
 .footer {
   background-color: var(--main-bckgr-color);
   margin-top: 115px;
+  padding-bottom: 25px;
 }
 // заголовок
 .footer__title {
@@ -59,14 +60,14 @@
 .footer-tel__span {
   font-family: DM Sans;
   font-style: normal;
-  @include font($fs: 12px, $fw: 500, $ls: 1.83);
+  @include font($fs: 12px, $fw: 500, $lh: 1.83);
 
   color: var(--third-text-color);
 }
 .footer-tel__link {
   font-family: DM Sans;
   font-style: normal;
-  @include font($fs: 12px, $fw: 500, $ls: 1.83);
+  @include font($fs: 12px, $fw: 500, $lh: 1.83);
 
   color: var(--second-text-color);
 }
@@ -76,13 +77,12 @@
 }
 .copyright__text {
   margin-top: 22px;
-  margin-bottom: 25px;
   padding-right: 91px;
   padding-left: 79px;
 
   font-family: DM Sans;
   font-style: normal;
-  @include font($fs: 14px, $fw: 500, $lh: 1.5, $ls: 1.83);
+  @include font($fs: 14px, $fw: 500, $lh: 1.5);
   text-align: center;
 
   color: var(--fourth-text-color);
