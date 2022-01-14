@@ -78,7 +78,7 @@
     @include font($fs: 14px, $fw: 700, $lh: 1.7, $ls: 0.04em);
     margin-top: 13px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     @include font($fs: 16px, $fw: 700, $lh: 1.7, $ls: 0.02em);
     margin-top: 15px;
     width: 330px;
