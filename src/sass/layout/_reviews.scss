@@ -1,0 +1,11 @@
+.reviews {
+  margin-top: 80px;
+}
+.reviews-picture {
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews-title {
+  @include font($fs: 12px, $fw: 500, $lh: 2.58);
+  text-align: center;
+}

@@ -2,10 +2,22 @@
   <div class="container">
     <picture>
       <source
-        srcset="images/reviews/customer-1-mobile.png 1x, images/reviews/customer-1-mobile-2x.png 2x"
-        media="(min-width: 320px)"
+        srcset="images/reviews/customer-1.png 1x, images/reviews/customer-1-2x.png 2x"
+        media="(min-width: 1200px)"
       />
-      <img src="images/reviews/customer-1-mobile.png" alt="женщина" />
+      <source
+        srcset="images\reviews\customer-1-tablet.png 1x, images/reviews/customer-1-tablet-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="images/reviews/customer-1-mobile.png 1x, images/reviews/customer-1-mobile-2x.png 2x"
+        media="(max-width: 768px)"
+      />
+      <img src="images/reviews/customer-1-mobile.png" alt="женщина" class="reviews-picture" />
     </picture>
+    <p class="reviews-title">
+      Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+      nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+    </p>
   </div>
 </section>
