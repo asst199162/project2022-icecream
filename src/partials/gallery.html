@@ -1,3 +1,24 @@
-<div class="six">
-    <p>gallery</p>
-</div>
+<section>
+    <div class="container">
+        <picture>
+            <source srcset="
+                ./images/gallery/gallery-jpg.jpg 1x, 
+                ./images/gallery/gallery-jpg-2x.jpg 2x" 
+                type="image/jpeg" 
+                media="(min-width: 1200px)">
+            <source srcset="
+                ./images/gallery/gallery-jpg-tablet.jpg 1x, 
+                ./images/gallery/gallery-jpg-tablet-2x.jpg 2x" 
+                type="image/jpeg" 
+                media="(min-width: 768px) and (max-width: 1200px)">
+            <source srcset="
+                ./images/gallery/gallery-jpg-mobile.jpg 1x, 
+                ./images/gallery/gallery-jpg-mobile-2x.jpg 2x" 
+                type="image/jpeg" 
+                media="(max-width: 768px)">
+            <img  
+                src="./images/gallery/gallery-jpg-mobile.jpg" 
+                alt="gallery"/>
+        </picture>
+    </div>
+</section>
