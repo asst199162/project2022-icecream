@@ -1,11 +1,100 @@
-.one {
-  background-color: #e7df6c;
+.hero{
+  background-color:var(--hero-bckgr-color);
+  padding-bottom: 160px;
+    @media screen and(min-width: 768px) {
+      padding-top: 37px;
+      padding-bottom: 34px;
+  }
 }
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and(min-width: 768px) {
+    justify-content: normal;
+}
+}
+.header__mob-button{
+  @media screen and(min-width: 768px) {
+    margin-left: auto;
+}
+}
+.header__button{
+  display: none;
+  @media screen and(min-width: 768px) {
+    display: block;
+    margin-left: 30px;
+    width: 160px;
+    height: 44px;
+    background-color: var(--second-btn-color);
+    color: var(--main-btn-color);
+    border-radius: 22px;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+    border: none;
+}
+}
+.header__list{
+  display: none;
 
-.flex {
+}
+.hero-rigth{
+  display: none;
+  @media screen and(min-width: 768px) {
+    display: block;
+}
+}
+.hero-down{
+  display: none;
+  @media screen and(min-width: 768px) {
+    display: block;
+}
+}
+.hero__title{
+  font-family: 'Titan One', cursive;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+  font-size: 26px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+  width: 239px;
+}
+.hero__span{
+  font-family: 'Titan One', cursive;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+  font-size: 48px;
+  line-height: 0.9;
+}
+.hero__btn{
   display: flex;
 }
-
-.svg {
-  fill: rgb(0, 0, 0);
+.hero-btn__left{
+  cursor: pointer;
+  padding: 0;
+  width: 63px;
+  height: 24px;
+  background-color: #D41443;
+  border-radius: 20px;
+  border: none;
+  font-size: 8px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: var(--second-btn-color);
+  margin-right: 8px;
+}
+.hero-btn__rigth{
+  cursor: pointer;
+  padding: 0;
+  width: 83px;
+  height: 24px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-size: 8px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: var(--main-btn-color);
 }
