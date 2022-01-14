@@ -3,28 +3,28 @@
 
   font-family: Titan One;
 
-  @include font($fz: 18px, $fw: 400, $lh: 1.17, $ls: 0.03em);
+  @include font($fs: 18px, $fw: 400, $lh: 1.17, $ls: 0.03em);
   text-align: center;
   text-transform: uppercase;
   color: var(--third-title-color);
   @media screen and (min-width: 760px) {
-    @include font($fz: 26px, $fw: 400, $lh: 1.15, $ls: 0.03em);
+    @include font($fs: 26px, $fw: 400, $lh: 1.15, $ls: 0.03em);
   }
   @media screen and (min-width: 1200px) {
-    @include font($fz: 30px, $fw: 400, $lh: 1.13, $ls: 0.04em);
+    @include font($fs: 30px, $fw: 400, $lh: 1.13, $ls: 0.04em);
   }
 }
 
 .section__title {
   font-family: Titan One;
-  @include font($fz: 34px, $fw: 400, $lh: 1.15, $ls: 0.04em);
+  @include font($fs: 34px, $fw: 400, $lh: 1.15, $ls: 0.04em);
   text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
   @media screen and (min-width: 760px) {
-    @include font($fz: 48px, $fw: 400, $lh: 1.15, $ls: 0.04em);
+    @include font($fs: 48px, $fw: 400, $lh: 1.15, $ls: 0.04em);
   }
   @media screen and (min-width: 1200px) {
-    @include font($fz: 58px, $fw: 400, $lh: 1.14, $ls: 0.04em);
+    @include font($fs: 58px, $fw: 400, $lh: 1.14, $ls: 0.04em);
   }
 }
