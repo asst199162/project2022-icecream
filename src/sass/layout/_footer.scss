@@ -2,11 +2,33 @@
   background-color: var(--main-bckgr-color);
   margin-top: 115px;
   padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 158px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 165px;
+  }
+}
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
 }
 // заголовок
 .footer__title {
-  padding-right: 51px;
+  width: 232px;
   margin-bottom: 43px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin-bottom: 91px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 97px;
+  }
 }
 .footer__title-one {
   margin-bottom: 17px;
@@ -17,6 +39,14 @@
   text-transform: uppercase;
 
   color: var(--third-title-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+    @include font($fs: 26px, $lh: 1.15, $ls: 0.04em);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font($fs: 30px, $lh: 1.13, $ls: 0.04em);
+  }
 }
 .footer__title-two {
   font-family: 'Titan One';
@@ -25,8 +55,20 @@
   text-transform: uppercase;
 
   color: var(--main-title-color);
+
+  @media screen and (min-width: 768px) {
+    @include font($fs: 48px, $lh: 1.14, $ls: 0.06em);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font($fs: 58px, $lh: 1.13, $ls: 0.06em);
+  }
 }
 // соц.сети
+.social__thumb {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
 .social__list {
   display: flex;
   justify-content: right;
@@ -42,6 +84,14 @@
   border-radius: 50%;
   color: #ffffff;
   background-color: var(--social-icon-color);
+
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-social-icon-color);
+    color: #ffffff;
+  }
 }
 .social__item {
   width: 32px;
@@ -70,6 +120,14 @@
   @include font($fs: 12px, $fw: 500, $lh: 1.83);
 
   color: var(--second-text-color);
+  &:hover,
+  &:focus {
+    color: var(--hover-social-icon-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include font($fs: 14px, $fw: 500, $lh: 1.85);
+  }
 }
 // копирайт
 .copyright {
@@ -82,8 +140,14 @@
 
   font-family: DM Sans;
   font-style: normal;
-  @include font($fs: 14px, $fw: 500, $lh: 1.5);
+  @include font($fs: 14px, $fw: 500, $lh: 1.5, $ls: 0.02em);
   text-align: center;
 
   color: var(--fourth-text-color);
+  @media screen and (min-width: 768px) {
+    @include font($fs: 14px, $fw: 500, $lh: 1.85, $ls: 0.02em);
+  }
+  @media screen and (min-width: 768px) {
+    @include font($fs: 16px, $fw: 500, $lh: 1.87, $ls: 0.02em);
+  }
 }
