@@ -52,6 +52,48 @@
 }
 // .advantages__img {
 // }
+.advantages__box--milk::before {
+  content: '';
+  background-repeat: no-repeat;
+  display: block;
+  width: 33px;
+  height: 50px;
+  background-image: url(./../images/advantages/milk-cow.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(./../images/advantages/milk-cow-2x.png);
+    }
+  }
+}
+
+.advantages__box--apple::before {
+  content: '';
+  background-repeat: no-repeat;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(./../images/advantages/apple.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(./../images/advantages/apple-2x.png);
+    }
+  }
+}
+
+.advantages__box--candy::before {
+  content: '';
+  background-repeat: no-repeat;
+  display: block;
+  width: 44px;
+  height: 50px;
+  background-image: url(./../images/advantages/candy.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(./../images/advantages/candy-2x.png);
+    }
+  }
+}
+
 .advantages__title {
   font-family: Titan One;
   @include font($fs: 36px, $fw: 400, $lh: 1.14, $ls: 0.04em);
