@@ -1,27 +1,40 @@
-.four {
+.about__container {
   background-color: var(--main-bckgr-color);
-}
+  margin: 0 auto;
 
-.about__section {
   @media screen and(min-width: 320px) {
     width: 100%;
-    padding: 125px 20px 39px 20px;
   }
 
   @media screen and(min-width: 768px) {
-    width: 772px; 
-    padding: 130px 36px 66px 39px;
+    width: 772px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1280px;
+  }
+}
+
+.about__section {
+  @media screen and(min-width: 320px) {
+    padding: 125px 20px 39px 20px;
+  }
+
+  @media screen and(min-width: 768px) {
+    padding: 130px 36px 66px 39px;
+  }
+
+  @media screen and (min-width: 1200px) {
     padding: 125px 117px 39px 112px;
   }
 }
 
 .about__presentation {
-  @media screen and(min-width: 320px) {
-    text-align: center;
+  background-color: var(--main-bckgr-color);
+  display: block;
+  margin: 0 auto;
+
+  @media screen and(min-width: 320px) {  
     padding-right: 61px;
     padding-left: 59px;
     margin-bottom: 26px;
@@ -38,7 +51,7 @@
     text-align: center;
     padding-right: 257px;
     padding-left: 260px;
-    margin-bottom: 55px;
+    margin-bottom: 34px;
   }
 }
 
@@ -71,32 +84,51 @@
 }
 
 .about__img {
+  // width: 280px;
   @media screen and (min-width: 320px) {
     margin-bottom: 46px;
   }
 
   @media screen and (min-width: 768px) {
+    // width: 340px;
     margin-bottom: 0;
   }
+
+  // @media screen and (min-width: 1200px) {
+  //   width: 516px;
+  // }
 }
 
 .about__image {
   display: block;
   margin: auto;
+  // width: 280px;
+
+  @media screen and (min-width: 768px) {
+    // width: 340px;
+    margin-bottom: 0;
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   width: 516px;
+  // }
 }
 
 .about__paragraph {
   padding: 0 30px;
   margin-bottom: 23px;
+  width: 220px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 50px;
+    padding: 50px 0 0 0;
     margin-left: 17px;
+    width: 340px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 51px;
+    padding: 72px 0 0 0;
     margin-left: 74px;
+    width: 463px;
   }
 }
 
@@ -132,4 +164,22 @@
   @media screen and (min-width: 1200px) {
     margin-bottom: 45px;
   }
+}
+
+.about__button-open {
+  width: 176px;
+  height: 44px;
+  border: none;
+  background: var(--second-btn-color);
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-style: normal;
+  @include font($fs: 14px, $fw: 700, $lh: 1.29, $ls: 0.04em);
+  // no letter spacing? why? 
+  @include flex ($df:flex, $jcc:center, $aic:center);
+  color: var(--main-btn-color);
+}
+
+.about__button-text {
+  margin-right: 13.62px;
 }
