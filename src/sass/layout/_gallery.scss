@@ -1,3 +1,6 @@
-.background {
+.gallery {
   background-image: linear-gradient(to bottom, var(--main-bckgr-color) 40%, #ffffff 15%);
+}
+.gallery__img {
+  margin: auto;
 }
