@@ -121,7 +121,7 @@
     content: '';
     background-image: url(./../images/products/icecream-2-mobile.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .products__box--icecream {
+      & {
         background-image: url(./../images/products/icecream-2-mobile-2x.png);
       }
     }
@@ -201,7 +201,7 @@
 
     background-image: url(./../images/products/more-point.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .products__box--icecream {
+      & {
         background-image: url(./../images/products/more-point-2x.png);
       }
     }
