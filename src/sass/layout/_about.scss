@@ -18,6 +18,24 @@
 .about__section {
   @media screen and(min-width: 320px) {
     padding: 125px 20px 39px 20px;
+    background-image: 
+    // linear-gradient(
+    //     rgba(47, 48, 58, 0.4), 
+    //     rgba(47, 48, 58, 0.4)
+    //     ), 
+        url(./../images/about/about-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 bottom -100px;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: 
+    // linear-gradient(
+    //     rgba(47, 48, 58, 0.4), 
+    //     rgba(47, 48, 58, 0.4)
+    //     ), 
+        url(./../images/about/about-bg-mobile-2x.png);
+    }
   }
 
   @media screen and(min-width: 768px) {
@@ -26,6 +44,24 @@
 
   @media screen and (min-width: 1200px) {
     padding: 125px 117px 39px 112px;
+    background-image: 
+    // linear-gradient(
+    //     rgba(47, 48, 58, 0.4), 
+    //     rgba(47, 48, 58, 0.4)
+    //     ), 
+        url(./../images/about/about-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 bottom -26px;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: 
+    // linear-gradient(
+    //     rgba(47, 48, 58, 0.4), 
+    //     rgba(47, 48, 58, 0.4)
+    //     ), 
+        url(./../images/about/about-bg-2x.png);
+    }
   }
 }
 
@@ -81,27 +117,6 @@
     @include flex ($df:flex, $jcc:center, $aic:center);
     flex-wrap: nowrap;
   }
-
-  @media screen and (min-width: 1200px) {
-    background-image: 
-    // linear-gradient(
-    //     rgba(47, 48, 58, 0.4), 
-    //     rgba(47, 48, 58, 0.4)
-    //     ), 
-        url(./../images/about/about-bg.png);
-    background-repeat: no-repeat;
-    background-position: 0 bottom -86px;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: 
-    // linear-gradient(
-    //     rgba(47, 48, 58, 0.4), 
-    //     rgba(47, 48, 58, 0.4)
-    //     ), 
-        url(./../images/about/about-bg-2x.png);
-    }
-  }
 }
 
 .about__img {
@@ -150,29 +165,6 @@
     padding: 72px 0 0 0;
     margin-left: 74px;
     width: 463px;
-  }
-}
-
-.about__background {
-  @media screen and(min-width: 320px) and (max-width: 767px) {
-    background-image: 
-    // linear-gradient(
-    //     rgba(47, 48, 58, 0.4), 
-    //     rgba(47, 48, 58, 0.4)
-    //     ), 
-        url(./../images/about/about-bg-mobile.png);
-    background-repeat: no-repeat;
-    background-position: 0 bottom -6px;
-    background-size: contain;
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: 
-    // linear-gradient(
-    //     rgba(47, 48, 58, 0.4), 
-    //     rgba(47, 48, 58, 0.4)
-    //     ), 
-        url(./../images/about/about-bg-mobile-2x.png);
-    }
   }
 }
 
