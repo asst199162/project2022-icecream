@@ -4,6 +4,10 @@
   @media screen and (min-width: 768px) {
     padding-bottom: 140px;
   }
+  // @media screen and (min-width: 1200px) {
+  //   padding-left: 115px;
+  //   padding-right: 115px;
+  // }
 }
 .advantages__list {
   @media screen and (min-width: 480px) {
@@ -124,6 +128,6 @@
   @media screen and (min-width: 1200px) {
     @include font($fs: 16px, $fw: 700, $lh: 1.7, $ls: 0.02em);
     margin-top: 15px;
-    width: 330px;
+    width: 100%;
   }
 }
