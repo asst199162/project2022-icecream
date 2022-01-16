@@ -1,22 +1,5 @@
-.about__container {
-  background-color: var(--main-bckgr-color);
-  margin: 0 auto;
-
-  @media screen and(min-width: 320px) {
-    width: 100%;
-  }
-
-  @media screen and(min-width: 768px) {
-    width: 772px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1280px;
-  }
-}
-
 .about__presentation {
-  background-color: var(--main-bckgr-color);
+  // background-color: var(--main-bckgr-color);
   display: block;
   margin: 0 auto;
 
@@ -61,7 +44,7 @@
 }
 
 .about__article {
-  background-color: var(--main-bckgr-color);
+  // background-color: var(--main-bckgr-color);
 
   @media screen and (min-width: 768px) {
     @include flex ($df:flex, $jcc:center, $aic:center);
