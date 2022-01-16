@@ -65,7 +65,7 @@
     //     ), 
         url(./../images/about/about-bg.png);
     background-repeat: no-repeat;
-    background-position: 0 bottom -26px;
+    background-position: bottom;
     background-size: cover;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
