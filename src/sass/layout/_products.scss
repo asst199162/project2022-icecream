@@ -251,8 +251,17 @@
   border-radius: 50%;
   border: none;
   background-color: var(--second-btn-color);
+  color: var(--main-btn-color);
+  transition-property: color, background-color;
+  @extend %animation-style;
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-btn-color);
+    color: var(--second-btn-color);
+  }
 }
 
 .btn__icon {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
