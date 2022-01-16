@@ -18,6 +18,25 @@
 .about__section {
   @media screen and(min-width: 320px) {
     padding: 125px 20px 39px 20px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+        ), 
+        url(images/about/about-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    // padding: 118px 0;
+    // margin: 0 auto;
+    // min-height: 400px;
+    
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(images/about/about-bg-mobile-2x.png);
+    }
   }
 
   @media screen and(min-width: 768px) {
@@ -26,6 +45,22 @@
 
   @media screen and (min-width: 1200px) {
     padding: 125px 117px 39px 112px;
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(images/about/about-bg.png);
+        padding: 200px 0;
+        max-width: 1600px;
+        min-height: 600px;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(images/about/about-bg-2x.png);
+        }
   }
 }
 
@@ -35,22 +70,22 @@
   margin: 0 auto;
 
   @media screen and(min-width: 320px) {  
-    padding-right: 61px;
-    padding-left: 59px;
+    padding-right: 41px;
+    padding-left: 39px;
     margin-bottom: 26px;
   }
 
   @media screen and(min-width: 768px) {
     text-align: center;
-    padding-right: 135px;
-    padding-left: 133px;
+    padding-right: 115px;
+    padding-left: 123px;
     margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1200px) {
     text-align: center;
-    padding-right: 257px;
-    padding-left: 260px;
+    padding-right: 237px;
+    padding-left: 240px;
     margin-bottom: 34px;
   }
 }
@@ -58,11 +93,11 @@
 .about__inscription {
   font-family: Titan One;
   font-style: normal;
-  @include font($fs: 18px, $fw: 400, $lh: 1.17, $ls: 0.04em);
-  // no letter spacing? why?
+  @include font($fs: 18px, $fw: 400, $lh: 1.17, $ls: 0);
   text-align: center;
   text-transform: uppercase;
   color: var(--ellipse-bckgr-color);
+  margin-bottom: 15px;
 }
 
 .about__title {
@@ -83,8 +118,11 @@
   }
 }
 
-.about__img {
+.about__image {
+  display: block;
+  margin: auto;
   // width: 280px;
+
   @media screen and (min-width: 320px) {
     margin-bottom: 46px;
   }
@@ -99,25 +137,10 @@
   // }
 }
 
-.about__image {
-  display: block;
-  margin: auto;
-  // width: 280px;
-
-  @media screen and (min-width: 768px) {
-    // width: 340px;
-    margin-bottom: 0;
-  }
-
-  // @media screen and (min-width: 1200px) {
-  //   width: 516px;
-  // }
-}
-
 .about__paragraph {
   padding: 0 30px;
   margin-bottom: 23px;
-  width: 220px;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     padding: 50px 0 0 0;
@@ -135,16 +158,17 @@
 .about__text {
   font-family: DM Sans;
   font-style: normal;
-  @include font($fs: 12px, $fw: 500, $lh: 1.62, $ls: 0.04em);
-  // no letter spacing? why? 
+  @include font($fs: 12px, $fw: 500, $lh: 1.54, $ls: 0);
   color: var(--third-text-color);
   margin-bottom: 34px;
 
   @media screen and (min-width: 768px) {
+    @include font($fs: 14px, $fw: 500, $lh: 1.79, $ls: 0);
     margin-bottom: 32px;
   }
 
   @media screen and (min-width: 1200px) {
+    @include font($fs: 16px, $fw: 500, $lh: 1.76, $ls: 0.04em);
     margin-bottom: 35px;
   }
 }
@@ -152,34 +176,38 @@
 .about__description {
   font-family: DM Sans;
   font-style: normal;
-  @include font($fs: 12px, $fw: 500, $lh: 1.62, $ls: 0.04em);
-  // no letter spacing? why? 
+  @include font($fs: 12px, $fw: 500, $lh: 1.66, $ls: 0);
   color: var(--fourth-text-color);
   margin-bottom: 17px;
 
   @media screen and (min-width: 768px) {
+    @include font($fs: 14px, $fw: 500, $lh: 1.79, $ls: 0.04em);
     margin-bottom: 62px;
   }
 
   @media screen and (min-width: 1200px) {
+    @include font($fs: 14px, $fw: 500, $lh: 1.93, $ls: 0.04em);
     margin-bottom: 45px;
   }
 }
 
 .about__button-open {
+  margin-right: auto;
   width: 176px;
   height: 44px;
   border: none;
-  background: var(--second-btn-color);
-  border-radius: 22px;
+  padding: 0;
   font-family: DM Sans;
   font-style: normal;
-  @include font($fs: 14px, $fw: 700, $lh: 1.29, $ls: 0.04em);
-  // no letter spacing? why? 
+  @include font($fs: 14px, $fw: 700, $lh: 1.29, $ls: 0);
   @include flex ($df:flex, $jcc:center, $aic:center);
   color: var(--main-btn-color);
+  background: var(--second-btn-color);
+  border-radius: 22px;
+  cursor: pointer;
 }
 
-.about__button-text {
-  margin-right: 13.62px;
+.about__button-icon {
+    fill: currentColor;
+    margin-left: 13.62px;
 }
