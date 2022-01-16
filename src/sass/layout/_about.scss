@@ -1,6 +1,8 @@
 .about__section {
+  margin: 0 auto;
+  background-color: var(--main-bckgr-color);
   @media screen and(min-width: 320px) and(max-width: 767px) {
-    padding: 125px 20px 39px 20px;
+    padding: 125px 0px 39px 0px;
     background-image: 
     // linear-gradient(
     //     rgba(47, 48, 58, 0.4), 
@@ -22,12 +24,12 @@
   }
 
   @media screen and(min-width: 768px) {
-    padding: 130px 36px 66px 39px;
+    padding: 130px 0px 66px 0px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1280px;
-    padding: 125px 117px 39px 112px;
+    padding: 125px 0px 39px 0px;
     background-image: 
     // linear-gradient(
     //     rgba(47, 48, 58, 0.4), 
