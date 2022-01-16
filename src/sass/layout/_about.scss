@@ -18,10 +18,11 @@
 .about__section {
   @media screen and(min-width: 320px) {
     padding: 125px 20px 39px 20px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)
-        ), 
+    background-image: 
+    // linear-gradient(
+    //     rgba(47, 48, 58, 0.4), 
+    //     rgba(47, 48, 58, 0.4)
+    //     ), 
         url(images/about/about-bg-mobile.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -31,10 +32,11 @@
     // min-height: 400px;
     
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),
+        background-image: 
+        // linear-gradient(
+        //     rgba(47, 48, 58, 0.4),
+        //     rgba(47, 48, 58, 0.4)
+        // ),
         url(images/about/about-bg-mobile-2x.png);
     }
   }
@@ -45,20 +47,25 @@
 
   @media screen and (min-width: 1200px) {
     padding: 125px 117px 39px 112px;
-    background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),
+    background-image: 
+    // linear-gradient(
+    //         rgba(47, 48, 58, 0.4),
+    //         rgba(47, 48, 58, 0.4)
+    //     ),
         url(images/about/about-bg.png);
-        padding: 200px 0;
-        max-width: 1600px;
-        min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+        // padding: 200px 0;
+        // max-width: 1600px;
+        // min-height: 600px;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: linear-gradient(
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)
-            ),
+            background-image: 
+            // linear-gradient(
+            //     rgba(47, 48, 58, 0.4),
+            //     rgba(47, 48, 58, 0.4)
+            // ),
             url(images/about/about-bg-2x.png);
         }
   }
