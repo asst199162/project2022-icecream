@@ -9,6 +9,7 @@
 @import '../sass/utils/varibles'; //цвета
 @import '../sass/utils/mixins';
 @import '../sass/base/common'; //body
+@import '../sass/utils/placeholder'; //animation
 
 @import '../sass/components/container';
 @import '../sass/components/sections';
@@ -17,7 +18,7 @@
 
 @import '../sass/layout/hero-header';
 @import '../sass/layout/products';
-@import '../sass/layout/about'; //4
+// @import '../sass/layout/about'; //4
 @import '../sass/layout/advantages';
 @import '../sass/layout/gallery'; //6
 @import '../sass/layout/reviews';
