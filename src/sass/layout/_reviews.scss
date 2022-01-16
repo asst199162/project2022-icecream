@@ -12,17 +12,6 @@
     padding-bottom: 130px;
   }
 }
-.container--padding {
-  @media screen and (min-width: 768px) {
-    padding-left: 74px;
-    padding-right: 74px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-left: 135px;
-    padding-right: 135px;
-  }
-}
 .reviews__picture {
   margin-left: auto;
   margin-right: auto;
