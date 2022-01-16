@@ -208,7 +208,7 @@
   }
 }
 
-.products__description {
+.products__text {
   display: block;
   padding-left: 40px;
   padding-right: 40px;
@@ -245,7 +245,6 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: none;
   background-color: var(--second-btn-color);
   color: var(--main-btn-color);
   transition-property: color, background-color;
