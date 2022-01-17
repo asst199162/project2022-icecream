@@ -77,7 +77,8 @@
   color: #ffffff;
   background-color: var(--social-icon-color);
 
-  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition-property: background-color;
+  @extend %animation-style;
 
   &:hover,
   &:focus {
