@@ -92,6 +92,7 @@
   &::before {
     content: '';
     background-image: url(./../images/products/icecream-1-mobile.png);
+    background-size: 249px 252px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       & {
         background-image: url(./../images/products/icecream-1-mobile-2x.png);
@@ -99,6 +100,7 @@
     }
     @media screen and (min-width: 768px) {
       background-image: url(./../images/products/icecream-1-tablet.png);
+      background-size: 220px 224px;
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         & {
           background-image: url(./../images/products/icecream-1-tablet-2x.png);
@@ -107,6 +109,7 @@
     }
     @media screen and (min-width: 1200px) {
       background-image: url(./../images/products/icecream-1.png);
+      background-size: 335px 335px;
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         & {
           background-image: url(./../images/products/icecream-1-2x.png);
@@ -121,6 +124,7 @@
   &::before {
     content: '';
     background-image: url(./../images/products/icecream-2-mobile.png);
+    background-size: 249px 252px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       & {
         background-image: url(./../images/products/icecream-2-mobile-2x.png);
@@ -128,6 +132,7 @@
     }
     @media screen and (min-width: 768px) {
       background-image: url(./../images/products/icecream-2-tablet.png);
+      background-size: 220px 224px;
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         & {
           background-image: url(./../images/products/icecream-2-tablet-2x.png);
@@ -136,6 +141,7 @@
     }
     @media screen and (min-width: 1200px) {
       background-image: url(./../images/products/icecream-2.png);
+      background-size: 335px 335px;
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         & {
           background-image: url(./../images/products/icecream-2-2x.png);
@@ -150,6 +156,8 @@
   &::before {
     content: '';
     background-image: url(./../images/products/icecream-3-mobile.png);
+    background-size: 249px 252px;
+
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       & {
         background-image: url(./../images/products/icecream-3-mobile-2x.png);
@@ -157,6 +165,7 @@
     }
     @media screen and (min-width: 768px) {
       background-image: url(./../images/products/icecream-3-tablet.png);
+      background-size: 220px 224px;
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         & {
           background-image: url(./../images/products/icecream-3-tablet-2x.png);
@@ -165,6 +174,7 @@
     }
     @media screen and (min-width: 1200px) {
       background-image: url(./../images/products/icecream-3.png);
+      background-size: 335px 335px;
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         & {
           background-image: url(./../images/products/icecream-3-2x.png);
@@ -200,6 +210,7 @@
     background-position: center;
 
     background-image: url(./../images/products/more-point.png);
+    background-size: 26px 6px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       & {
         background-image: url(./../images/products/more-point-2x.png);
@@ -248,46 +259,6 @@
   }
 }
 
-.more__btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--second-btn-color);
-  color: var(--main-btn-color);
-  transition-property: color, background-color;
-  @extend %animation-style;
-
-  &:hover,
-  &:focus {
-    background-color: var(--main-btn-color);
-    color: var(--second-btn-color);
-  }
-}
-
-.btn__icon {
-  fill: currentColor;
-}
-
-.menu-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--second-btn-color);
-  color: var(--main-btn-color);
-  transition-property: color, background-color;
-  @extend %animation-style;
-}
-
-.menu-btn__icon {
-  fill: currentColor;
-}
-
 .products__wrap {
   position: relative;
   overflow: hidden;
@@ -310,6 +281,12 @@
   }
 }
 
+.menu-container.is-open {
+  transform: translateY(0);
+  @extend %animation-style;
+  height: 100%;
+}
+
 .text-container--icecream {
   background-color: var(--hero-bckgr-color);
 }
@@ -320,6 +297,22 @@
   background-color: #c2e297;
 }
 
+.menu-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--second-btn-color);
+  color: var(--main-btn-color);
+  transition-property: color, background-color;
+  @extend %animation-style;
+}
+
+.menu-btn__icon {
+  fill: currentColor;
+}
 .menu-btn__icon--close {
   display: none;
 }
@@ -330,9 +323,4 @@
   .menu-btn__icon--close {
     display: block;
   }
-}
-.menu-container.is-open {
-  transform: translateY(0);
-  @extend %animation-style;
-  height: 100%;
 }
