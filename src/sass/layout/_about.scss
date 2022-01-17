@@ -77,25 +77,6 @@
   }
 }
 
-.about__inscription {
-  font-family: Titan One;
-  font-style: normal;
-  @include font($fs: 18px, $fw: 400, $lh: 1.17, $ls: 0);
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--ellipse-bckgr-color);
-  margin-bottom: 15px;
-}
-
-.about__title {
-  font-family: Titan One;
-  font-style: normal;
-  @include font($fs: 34px, $fw: 400, $lh: 1.15, $ls: 0.04em);
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--main-title-color);
-}
-
 .about__article {
   // background-color: var(--main-bckgr-color);
 
