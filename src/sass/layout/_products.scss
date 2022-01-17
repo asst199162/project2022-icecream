@@ -303,7 +303,8 @@
   border-radius: 24px;
 
   transform: translateY(110%);
-  transition: transform 250ms ease-in-out;
+  transition-duration: 5000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   .text-container {
     height: 100%;
     display: flex;
@@ -333,5 +334,7 @@
 }
 .menu-container.is-open {
   transform: translateY(0);
+  transition-duration: 5000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
 }
