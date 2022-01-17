@@ -288,7 +288,7 @@
 .content-menu__modal-box {
   width: 100%;
   min-height: 502px;
-  background-color: var(--social-icon-color);
+  background-color: var(--second-title-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -343,7 +343,7 @@
     font-size: 26px;
   }
 }
-.content-menu__text {
+.content-menu__link {
   font-family: DM Sans;
   font-style: normal;
   @include font($fs: 16px, $fw: 500, $lh: 1.66, $ls: 0.02em);
