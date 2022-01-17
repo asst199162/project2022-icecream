@@ -122,15 +122,15 @@
         </ul>
         <ul class="btn-bottom">
             <li class="btn-bottom__one">
-                <button class="btn-cont btn-cont__one" type="button">Our Locations
-                    <svg width="20" height="10">
+                <button type="button" class="btn-cont btn-cont__one-open" data-read-open>Our Locations
+                    <svg class="icon-arrow" width="20" height="10">
                         <use href="images/svg/icon.svg/#btn-arrow-1"></use>
                     </svg>
                 </button>
             </li>
             <li class="btn-bottom__two">
-                <button class="btn-cont btn-cont__two" type="button">Franchise
-                    <svg width="20" height="10">
+                <button type="button" class="btn-cont btn-cont__two-open" data-price-open>Franchise
+                    <svg class="icon-arrow" width="20" height="10">
                         <use href="images/svg/icon.svg/#btn-arrow-2"></use>
                     </svg>
                 </button>
@@ -138,3 +138,88 @@
         </ul>
     </div>
 </section>
+
+                    <!-- Our Locations Modal -->
+<div class="backdrop is-hidden" data-read>
+    <div class="content-menu__modal-box">
+        <button type="button" class="content-menu__button-close" data-read-close>
+            <svg class="content-menu__icon" width="14" height="14">
+                <use href="./images/svg/icon.svg#menu-close"></use>
+            </svg>
+        </button>
+        <p class="content-menu__title">Our cafés are located at the following addresse</p>
+        <div class="content-menu">
+            <ul class="content-menu__list">
+                <li class="content-menu__item-city">
+                    <div class="text__box-two">
+                        <p class="content-menu__text-city">Chicago</p>
+                    </div>
+                </li>
+                <li class="content-menu__item-addresse">
+                    <p class="content-menu__text-addresse">Longfellow Center & Park</p>
+                </li>
+                <li class="content-menu__item-location">
+                    <p class="content-menu__text">610 S Ridgeland Ave, Oak Park, IL 60304</p>
+                </li>
+                <li class="content-menu__item-city">
+                    <div class="text__box-two">
+                        <p class="content-menu__text-city">Los Angeles</p>
+                    </div>
+                </li>
+                <li class="content-menu__item-addresse">
+                    <p class="content-menu__text-addresse">Wilshire Country Club</p>
+                </li>
+                <li class="content-menu__item-location">
+                    <p class="content-menu__text">301 N Rossmore Ave, Los Angeles, CA 90004</p>
+                </li>
+                <li class="content-menu__item-city">
+                    <div class="text__box-two">
+                        <p class="content-menu__text-city">New York</p>
+                    </div>
+                </li>
+                <li class="content-menu__item-addresse">
+                    <p class="content-menu__text-addresse">Bronx Zoo</p>
+                </li>
+                <li class="content-menu__item">
+                    <p class="content-menu__text">2300 Southern Blvd, Bronx, NY 10460</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                    <!-- Franchise Modal -->
+<div class="backdrop is-hidden" data-price>
+    <div class="content-menu__modal-box">
+        <button type="button" class="content-menu__button-close" data-price-close>
+            <svg class="content-menu__icon" width="14" height="14">
+                <use href="./images/svg/icon.svg#menu-close"></use>
+            </svg>
+        </button>
+            <p class="content-menu__title-price">Ice Cream Price</p>
+        <div class="content-menu">
+            <ul class="content-menu__list">
+                <li class="content-menu__item-price">
+                    <p class="content-menu__text-price">Ice Cream "Пломбир"</p>
+                        <span class="content-menu__text-price content__item-count">2$</span>
+                </li>
+                <li class="content-menu__item-price">
+                    <p class="content-menu__text-price">Ice Cream "Каштан"</p>
+                        <span class="content-menu__text-price content__item-count">4$</span>
+                </li class="content-menu__item">
+                <li class="content-menu__item-price">
+                    <p class="content-menu__text-price">Ice Cream "Чебурашка"</p>
+                        <span class="content-menu__text-price content__item-count">5$</span>
+                </li>
+                <li class="content-menu__item-price">
+                    <p class="content-menu__text-price">Ice Cream "Эйфория"</p>
+                        <span class="content-menu__text-price content__item-count">7$</span>
+                </li>
+                <li class="content-menu__item-price">
+                    <p class="content-menu__text-price">Ice Cream "Тортуфо"</p>
+                        <span class="content-menu__text-price content__item-count">3$</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
