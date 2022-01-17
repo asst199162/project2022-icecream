@@ -1,3 +1,5 @@
+
+
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container2');
   const openMenuBtn = document.querySelector('.js-open-menu2');
