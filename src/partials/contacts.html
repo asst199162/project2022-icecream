@@ -1,4 +1,4 @@
-<section class="section section-contacts" id="contacts">
+<section class="section section-contacts">
     <div class="container" id="contacts">
         <h2 class="hide-title">Contacts</h2>
         <ul class="content">
@@ -151,7 +151,7 @@
         <div class="content-menu">
             <ul class="content-menu__list">
                 <li class="content-menu__item-city">
-                    <div class="text__box-two">
+                    <div class="text__box-city">
                         <p class="content-menu__text-city">Chicago</p>
                     </div>
                 </li>
@@ -159,11 +159,11 @@
                     <p class="content-menu__text-addresse">Longfellow Center & Park</p>
                 </li>
                 <li class="content-menu__item-location">
-                    <a class="content-menu__link" href="https://goo.gl/maps/RB16WYHkG5TXtHdY6">610 S Ridgeland Ave, Oak Park, IL 60304</a>
-                    <!-- <p class="content-menu__text">610 S Ridgeland Ave, Oak Park, IL 60304</p> -->
+                    <a class="content-menu__link" href="https://goo.gl/maps/RB16WYHkG5TXtHdY6">
+                        610 S Ridgeland Ave, Oak Park, IL 60304</a>
                 </li>
                 <li class="content-menu__item-city">
-                    <div class="text__box-two">
+                    <div class="text__box-city">
                         <p class="content-menu__text-city">Los Angeles</p>
                     </div>
                 </li>
@@ -171,11 +171,11 @@
                     <p class="content-menu__text-addresse">Wilshire Country Club</p>
                 </li>
                 <li class="content-menu__item-location">
-                    <a class="content-menu__link" href="https://goo.gl/maps/kG2du6YFhDyBGaCFA">301 N Rossmore Ave, Los Angeles, CA 90004</a>
-                    <!-- <p class="content-menu__text">301 N Rossmore Ave, Los Angeles, CA 90004</p> -->
+                    <a class="content-menu__link" href="https://goo.gl/maps/kG2du6YFhDyBGaCFA">
+                        301 N Rossmore Ave, Los Angeles, CA 90004</a>
                 </li>
                 <li class="content-menu__item-city">
-                    <div class="text__box-two">
+                    <div class="text__box-city">
                         <p class="content-menu__text-city">New York</p>
                     </div>
                 </li>
@@ -183,8 +183,8 @@
                     <p class="content-menu__text-addresse">Bronx Zoo</p>
                 </li>
                 <li class="content-menu__item">
-                    <a class="content-menu__link" href="https://goo.gl/maps/RqskFqhSTj5egAKt9">2300 Southern Blvd, Bronx, NY 10460</a>
-                    <!-- <p class="content-menu__text">2300 Southern Blvd, Bronx, NY 10460</p> -->
+                    <a class="content-menu__link" href="https://goo.gl/maps/RqskFqhSTj5egAKt9">
+                        2300 Southern Blvd, Bronx, NY 10460</a>
                 </li>
             </ul>
         </div>
@@ -199,30 +199,40 @@
                 <use href="./images/svg/icon.svg#menu-close"></use>
             </svg>
         </button>
-            <p class="content-menu__title-price">Ice Cream Price</p>
-        <div class="content-menu">
-            <ul class="content-menu__list">
-                <li class="content-menu__item-price">
-                    <p class="content-menu__text-price">Ice Cream "Пломбир"</p>
-                        <span class="content-menu__text-price content__item-count">2$</span>
-                </li>
-                <li class="content-menu__item-price">
-                    <p class="content-menu__text-price">Ice Cream "Каштан"</p>
-                        <span class="content-menu__text-price content__item-count">4$</span>
-                </li class="content-menu__item">
-                <li class="content-menu__item-price">
-                    <p class="content-menu__text-price">Ice Cream "Чебурашка"</p>
-                        <span class="content-menu__text-price content__item-count">5$</span>
-                </li>
-                <li class="content-menu__item-price">
-                    <p class="content-menu__text-price">Ice Cream "Эйфория"</p>
-                        <span class="content-menu__text-price content__item-count">7$</span>
-                </li>
-                <li class="content-menu__item-price">
-                    <p class="content-menu__text-price">Ice Cream "Тортуфо"</p>
-                        <span class="content-menu__text-price content__item-count">3$</span>
-                </li>
-            </ul>
-        </div>
+            <p class="modal__title ">CONTACT US</p>
+            <form action="#" class="modal__form">
+                <label class="label__input">
+                    <span class="label__text">Name</span>
+                    <span class="input__wrap">
+                        <input type="text" name="user-name" class="input__form" required minlength="2" placeholder=" " />
+                        <svg class="input__icon" width="18" height="18">
+                            <use href="./images/svg/icon.svg#icon-person"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="label__input">
+                    <span class="label__text">Phone number</span>
+                    <span class="input__wrap">
+                        <input type="tel" name="user-tel" class="input__form" placeholder=" " />
+                        <svg class="input__icon" width="18" height="18">
+                            <use href="./images/svg/icon.svg#icon-phone"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="label__input">
+                    <span class="label__text">Email</span>
+                    <span class="input__wrap">
+                        <input type="email" name="user-email" class="input__form" placeholder=" " />
+                        <svg class="input__icon" width="18" height="18">
+                            <use href="./images/svg/icon.svg#icon-email"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="label__input">
+                    <span class="label__text">Message</span>
+                    <textarea name="user-text" class="input__wrap text__form" placeholder="Type text"></textarea>
+                </label>
+                <button type="button" class="btn-cont btn-cont__send" data-read-open>Send</button>
+            </form>
     </div>
 </div>

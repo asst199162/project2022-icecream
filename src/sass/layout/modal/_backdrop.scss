@@ -1,4 +1,13 @@
 .backdrop {
+  background-image: 
+    // linear-gradient(
+    //     rgba(47, 48, 58, 0.4), 
+    //     rgba(47, 48, 58, 0.4)
+    //     ), 
+        url(./../images/modal/ice-cream-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
   @media screen and (max-width: 479px) {
     padding: 1px 15px;
   }
