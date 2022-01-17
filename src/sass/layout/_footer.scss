@@ -77,7 +77,8 @@
   color: #ffffff;
   background-color: var(--social-icon-color);
 
-  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition-property: background-color;
+  @extend %animation-style;
 
   &:hover,
   &:focus {
@@ -98,6 +99,9 @@
   display: flex;
   justify-content: end;
   margin-bottom: 43px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 .footer-tel__span {
   font-family: DM Sans;
@@ -126,7 +130,7 @@
   border-top: 1px solid var(--border-color);
 }
 .copyright__text {
-  margin-top: 22px;
+  padding-top: 22px;
   padding-right: 91px;
   padding-left: 79px;
 
@@ -138,6 +142,7 @@
   color: var(--fourth-text-color);
   @media screen and (min-width: 768px) {
     @include font($fs: 14px, $fw: 500, $lh: 1.85, $ls: 0.02em);
+    padding-top: 29px;
   }
   @media screen and (min-width: 768px) {
     @include font($fs: 16px, $fw: 500, $lh: 1.87, $ls: 0.02em);

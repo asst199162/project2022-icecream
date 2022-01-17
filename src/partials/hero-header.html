@@ -1,30 +1,79 @@
-<section class="hero">
-    <div class="container">
+<section class="hero" id="home">
+    <div class="container container-hero">
+        <div class="container-photo">
+            <picture class="photo-ellipse">
+                <source srcset="
+                    ./images/hero/ellipse.png 1x, 
+                    ./images/hero/ellipse-2x.png 2x"                     
+                    media="(min-width: 1200px)">
+                <source srcset="
+                    ./images/hero/Ellipse-tablet.png 1x, 
+                    ./images/hero/Ellipse-tablet-2x.png 2x"                      
+                    media="(min-width: 768px) and (max-width: 1200px)">
+                <source srcset="
+                    ./images/hero/ellipse-mobile.png 1x, 
+                    ./images/hero/ellipse-mobile-2x.png 2x"                     
+                    media="(max-width: 768px)">
+                <img class="gallery__img"  
+                    src="./images/hero/ellipse-mobile.png" 
+                    alt="ellipse"/>
+            </picture>
+            <picture class="photo-icecream">
+                <source srcset="
+                    ./images/hero/hero-icecream.png 1x, 
+                    ./images/hero/hero-icecream-2x.png 2x"                     
+                    media="(min-width: 1200px)">
+                <source srcset="
+                    ./images/hero/hero-icecream-tablet.png 1x, 
+                    ./images/hero/hero-icecream-tablet-2x.png 2x"                      
+                    media="(min-width: 768px) and (max-width: 1200px)">
+                <source srcset="
+                    ./images/hero/hero-icecream-mobile.png 1x, 
+                    ./images/hero/hero-icecream-mobile-2x.png 2x"                     
+                    media="(max-width: 767px)">
+                <img class="gallery__img"  
+                    src="./images/hero/hero-icecream-mobile.png" 
+                    alt="icecream"/>
+            </picture>
+            <picture class="photo-woman">
+                <source srcset="
+                    ./images/hero/hero-woman.png 1x, 
+                    ./images/hero/hero-woman-2x.png 2x"                     
+                    media="(min-width: 1200px)">
+                <source srcset="
+                    ./images/hero/hero-woman-tablet.png 1x, 
+                    ./images/hero/hero-woman-tablet-2x.png 2x"                      
+                    media="(min-width: 768px) and (max-width: 1200px)">
+                <img class="gallery__img"  
+                    src="./images/hero/hero-woman.png" 
+                    alt="woman"/>
+            </picture>
+        </div>
         <header class="header">
             <img class="header__img" src="images/header/logo.png" alt="logo">
             <ul class="header__list">
                 <li class="header__item">
-                    <a href="#" class="header__link">Home</a>
+                    <a href="#home" class="header__link current">Home</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">About us</a>
+                    <a href="#about" class="header__link">About us</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">How its made?</a>
+                    <a href="#made" class="header__link">How its made?</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">Our products</a>
+                    <a href="#product" class="header__link">Our products</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">Contact</a>
+                    <a href="#contacts" class="header__link">Contact</a>
                 </li>
             </ul>
-            <button type="button" class="header__mob-button" data-menu-open>
+            <button type="button" class="header__mob-button js-open-menu button1">
                 <svg class="header__mob-icon" width="24" height="16">
                     <use href="images/svg/icon.svg/#mob-menu"></use>
                 </svg>
             </button>
-            <button type="button" class="header__button " data-button >Buy now</button>
+            <button type="button" class="header__button">Buy now</button>
         </header>
         <div class="hero-left">
                 <h1 class="hero-left__title">ice cream made with <span class="hero__span">passion</span> </h1>
@@ -42,8 +91,12 @@
                     </ul>
         </div>
             <div class="hero-btn">
-            <button type="button" class="hero-btn__left">Products</button>
-            <button type="button" class="hero-btn__rigth">How it’s made?</button>
+            <button type="button" class="hero-btn__left">
+                <a href="#product" class="hero-btn__text">Products</a>
+            </button>
+            <button type="button" class="hero-btn__rigth">
+                <a href="#made" class="hero-btn__text-made">How it’s made?</a>
+            </button>
         </div>
         <div class="hero-down">
             <picture>
@@ -64,8 +117,8 @@
         </div>
         
     </div>
-        <div class="mob-menu is-hidden" data-menu>
-            <button type="button" class="mob-menu__btn-close" data-menu-close>
+        <div class="mob-menu js-menu-container">
+            <button type="button" class="mob-menu__btn-close js-close-menu">
                 <svg class="mob-menu__icon" width="24" height="16">
                     <use href="images/svg/icon.svg/#menu-close"></use>
                 </svg>
@@ -77,19 +130,19 @@
             </button>
                 <ul class="mob-menu__list">
                     <li class="mob-menu__item">
-                        <a href="#" class="mob-menu__link">Home</a>
+                        <a href="#home" class="mob-menu__link current">Home</a>
                     </li>
                     <li class="mob-menu__item">
-                        <a href="#" class="mob-menu__link">About us</a>
+                        <a href="#about" class="mob-menu__link">About us</a>
                     </li>
                     <li class="mob-menu__item">
-                        <a href="#" class="mob-menu__link">How it’s made?</a>
+                        <a href="#made" class="mob-menu__link">How it’s made?</a>
                     </li>
                     <li class="mob-menu__item">
-                        <a href="#" class="mob-menu__link">Our products</a>
+                        <a href="#product" class="mob-menu__link">Our products</a>
                     </li>
                     <li class="mob-menu__item">
-                        <a href="#" class="mob-menu__link">Contact</a>
+                        <a href="#contacts" class="mob-menu__link">Contact</a>
                     </li>
                 </ul>
         </div>
