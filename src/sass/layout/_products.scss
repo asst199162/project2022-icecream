@@ -68,7 +68,7 @@
     display: block;
     width: 100%;
     height: 252px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       height: 226px;
     }
     @media screen and (min-width: 1200px) {
@@ -80,6 +80,7 @@
 
     position: absolute;
     top: -23%;
+    z-index: 1;
     @media screen and (min-width: 1200px) {
       top: -40%;
     }
@@ -146,7 +147,6 @@
 
 .products__box--milkshakes {
   background-color: #c2e297;
-  position: relative;
   &::before {
     content: '';
     background-image: url(./../images/products/icecream-3-mobile.png);
@@ -213,17 +213,7 @@
   padding-left: 40px;
   padding-right: 40px;
   margin-bottom: 30px;
-
-  @media screen and (min-width: 760px) {
-    padding-left: 11px;
-    padding-right: 11px;
-    margin-bottom: 40px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-left: 45px;
-    padding-right: 45px;
-    margin-bottom: 60px;
-  }
+  width: 100%;
 
   font-family: DM Sans;
   @include font($fs: 14px, $fw: 700, $lh: 1.52, $ls: 0.04em);
@@ -231,10 +221,30 @@
   color: var(--main-text-color);
 
   @media screen and (min-width: 760px) {
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-bottom: 40px;
+
     @include font($fs: 14px, $fw: 700, $lh: 1.76, $ls: 0.04em);
   }
   @media screen and (min-width: 1200px) {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 60px;
     @include font($fs: 16px, $fw: 700, $lh: 1.76, $ls: 0.04em);
+  }
+}
+
+.products__text--more {
+  padding-top: 70%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+  @include font($fs: 12px, $fw: 700, $lh: 1.52, $ls: 0.04em);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 50%;
+    @include font($fs: 14px, $fw: 700, $lh: 1.76, $ls: 0.04em);
   }
 }
 
@@ -259,4 +269,69 @@
 
 .btn__icon {
   fill: currentColor;
+}
+
+.menu-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--second-btn-color);
+  color: var(--main-btn-color);
+  transition-property: color, background-color;
+  @extend %animation-style;
+}
+
+.menu-btn__icon {
+  fill: currentColor;
+}
+
+.products__wrap {
+  position: relative;
+  overflow: hidden;
+}
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  border-radius: 24px;
+
+  transform: translateY(110%);
+  transition: transform 250ms ease-in-out;
+  .text-container {
+    height: 100%;
+    display: flex;
+  }
+}
+
+.text-container--icecream {
+  background-color: var(--hero-bckgr-color);
+}
+.text-container--icecoffee {
+  background-color: #f0d1a5;
+}
+.text-container--milkshakes {
+  background-color: #c2e297;
+}
+
+.menu-btn__icon--close {
+  display: none;
+}
+.js-open-menu.is-open {
+  .menu-btn__icon--open {
+    display: none;
+  }
+  .menu-btn__icon--close {
+    display: block;
+  }
+}
+.menu-container.is-open {
+  transform: translateY(0);
+  height: 100%;
 }
