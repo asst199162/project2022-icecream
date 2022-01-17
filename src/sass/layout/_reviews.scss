@@ -12,17 +12,6 @@
     padding-bottom: 130px;
   }
 }
-.container--padding {
-  @media screen and (min-width: 768px) {
-    padding-left: 74px;
-    padding-right: 74px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-left: 135px;
-    padding-right: 135px;
-  }
-}
 .reviews__picture {
   margin-left: auto;
   margin-right: auto;
@@ -53,12 +42,13 @@
   max-width: 280px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
   border-left: solid 50px var(--reviews-bckgr-color);
   border-right: solid 50px var(--reviews-bckgr-color);
   border-top: solid 45px var(--reviews-bckgr-color);
-  border-bottom: solid 25px var(--reviews-bckgr-color);
+  border-bottom: solid 20px var(--reviews-bckgr-color);
   @include font($fs: 12px, $fw: 500, $lh: 2.58);
   text-align: center;
   color: var(--third-text-color);
@@ -105,6 +95,7 @@
   width: 54px;
   height: 40px;
   background-image: url(./../images/reviews/comma.png);
+  background-size: 54px 40px;
   color: var(--border-color);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {

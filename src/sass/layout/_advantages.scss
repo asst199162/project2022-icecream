@@ -4,10 +4,6 @@
   @media screen and (min-width: 768px) {
     padding-bottom: 140px;
   }
-  // @media screen and (min-width: 1200px) {
-  //   padding-left: 115px;
-  //   padding-right: 115px;
-  // }
 }
 .advantages__list {
   @media screen and (min-width: 480px) {
@@ -25,22 +21,6 @@
     }
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    flex-basis: calc((100% - 10px) / 2);
-    &:not(:first-child) {
-      margin-top: 0px;
-    }
-    margin-left: 10px;
-    &:nth-child(-n + 2) {
-      margin-top: 0px;
-    }
-    &:nth-child(2n + 1) {
-      margin-left: 0px;
-    }
-    &:nth-child(n + 3) {
-      margin-top: 15px;
-    }
-  }
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 120px) / 3);
     .advantages__item + & {
@@ -63,6 +43,7 @@
   width: 33px;
   height: 50px;
   background-image: url(./../images/advantages/milk-cow.png);
+  background-size: 33px 50px;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     & {
       background-image: url(./../images/advantages/milk-cow-2x.png);
@@ -77,6 +58,7 @@
   width: 50px;
   height: 50px;
   background-image: url(./../images/advantages/apple.png);
+  background-size: 50px 50px;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     & {
       background-image: url(./../images/advantages/apple-2x.png);
@@ -91,6 +73,7 @@
   width: 44px;
   height: 50px;
   background-image: url(./../images/advantages/candy.png);
+  background-size: 44px 50px;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     & {
       background-image: url(./../images/advantages/candy-2x.png);
