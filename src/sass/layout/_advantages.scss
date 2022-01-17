@@ -98,7 +98,7 @@
   }
 }
 .advantages__text {
-  @include font($fs: 12px, $fw: 700, $lh: 1.14, $ls: 0.04em);
+  @include font($fs: 12px, $fw: 700, $lh: 1.7, $ls: 0.04em);
   margin-top: 13px;
   width: 230px;
   @media screen and (min-width: 480px) {

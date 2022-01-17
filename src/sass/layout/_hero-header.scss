@@ -9,8 +9,6 @@
   @media screen and(min-width: 1200px) {
     padding-bottom: 45px;
   }
-
-  
 }
 .header {
   display: flex;
@@ -338,12 +336,18 @@
 }
 .container-hero {
   position: relative;
+  @media screen and (max-width: 767px) {
+    width: 320px;
+  }
 }
 
 .photo-ellipse {
   position: absolute;
   top: 77px;
   z-index: 1;
+  @media screen and (max-width: 767px) {
+    right: -20px;
+  }
   @media screen and(min-width: 768px) {
     top: 0px;
     right: 103px;

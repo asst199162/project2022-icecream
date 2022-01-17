@@ -7,8 +7,8 @@
     // linear-gradient(
     //     rgba(47, 48, 58, 0.4), 
     //     rgba(47, 48, 58, 0.4)
-    //     ), 
-        url(./../images/about/about-bg-mobile.png);
+    //     ),
+      url(./../images/about/about-bg-mobile.png);
     background-repeat: no-repeat;
     background-position: right 0px bottom 100px;
     background-size: contain;
@@ -18,7 +18,7 @@
     // linear-gradient(
     //     rgba(47, 48, 58, 0.4), 
     //     rgba(47, 48, 58, 0.4)
-    //     ), 
+    //     ),
         url(./../images/about/about-bg-mobile-2x.png);
     }
   }
@@ -34,8 +34,8 @@
     // linear-gradient(
     //     rgba(47, 48, 58, 0.4), 
     //     rgba(47, 48, 58, 0.4)
-    //     ), 
-        url(./../images/about/about-bg.png);
+    //     ),
+      url(./../images/about/about-bg.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -45,7 +45,7 @@
     // linear-gradient(
     //     rgba(47, 48, 58, 0.4), 
     //     rgba(47, 48, 58, 0.4)
-    //     ), 
+    //     ),
         url(./../images/about/about-bg-2x.png);
     }
   }
@@ -56,9 +56,9 @@
   display: block;
   margin: 0 auto;
 
-  @media screen and(min-width: 320px) {  
-    padding-right: 41px;
-    padding-left: 39px;
+  @media screen and(min-width: 320px) {
+    // padding-right: 41px;
+    // padding-left: 39px;
     margin-bottom: 26px;
   }
 
@@ -81,7 +81,7 @@
   // background-color: var(--main-bckgr-color);
 
   @media screen and (min-width: 768px) {
-    @include flex ($df:flex, $jcc:center, $aic:center);
+    @include flex($df: flex, $jcc: center, $aic: center);
     flex-wrap: nowrap;
   }
 }
@@ -168,7 +168,7 @@
   font-family: DM Sans;
   font-style: normal;
   @include font($fs: 14px, $fw: 700, $lh: 1.29, $ls: 0);
-  @include flex ($df:flex, $jcc:center, $aic:center);
+  @include flex($df: flex, $jcc: center, $aic: center);
   color: var(--main-btn-color);
   background: var(--second-btn-color);
   border-radius: 22px;
@@ -176,6 +176,6 @@
 }
 
 .about__button-icon {
-    fill: currentColor;
-    margin-left: 13.62px;
+  fill: currentColor;
+  margin-left: 13.62px;
 }
