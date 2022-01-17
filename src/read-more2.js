@@ -1,10 +1,8 @@
-
-
 (() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
-  
+  const mobileMenu = document.querySelector('.js-menu-container2');
+  const openMenuBtn = document.querySelector('.js-open-menu2');
+  const closeMenuBtn = document.querySelector('.js-close-menu2');
+
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
