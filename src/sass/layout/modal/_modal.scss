@@ -1,7 +1,7 @@
 .about-menu__modal-box {
     width: 100%;
     min-height: 502px;
-    background-color: var(--social-icon-color);
+    background-color: var(--second-title-color);
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
                 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -39,20 +39,29 @@
 }
 
 .about-menu__icon {
+    fill: var(--accent-color);
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
-        fill: var(--third-title-color);
+        fill: var(--hover-main-btn-color);
         }
+}
+
+.modal__img {
+    width: 293px;
+    height: 232px;
+    margin: 75px auto 75px auto;
 }
 
 .about-menu__text {
     font-family: DM Sans;
     font-style: normal;
-    @include font($fs: 16px, $fw: 500, $lh: 1.66, $ls: 0.02em);
+    @include font($fs: 21px, $fw: 500, $lh: 1.66, $ls: 0.02em);
     color: var(--fourth-text-color);
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .about-menu__social {
@@ -66,16 +75,16 @@
     margin-bottom: 40px;
 }
 
-// .about-menu__social-item {
-//     &:not(:last-child) {
-//         margin-left: 50px;
-//     }
-// }
+.about-menu__social-item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
 
 .about-menu__social-link {
     @include flex($df:flex, $jcc:center, $aic:center);
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     color: var(--second-title-color);
     background-color: var(--social-icon-color);
@@ -86,9 +95,5 @@
     &:focus {
         background-color: var(--hover-social-icon-color);
         color: var(--second-title-color);
-    }
-
-    &:not(:last-child) {
-        margin-left: 50px;
     }
 }
