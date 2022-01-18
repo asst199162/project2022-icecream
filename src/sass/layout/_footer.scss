@@ -1,6 +1,5 @@
 .footer {
   background-color: var(--main-bckgr-color);
-  padding-bottom: 25px;
 }
 .footer__container {
   @media screen and (min-width: 768px) {
@@ -95,22 +94,13 @@
   }
 }
 // телефон
-.footer-tel {
-  display: flex;
-  justify-content: end;
-  margin-bottom: 43px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-}
 .footer-tel__span {
-  font-family: DM Sans;
-  font-style: normal;
-  @include font($fs: 12px, $fw: 500, $lh: 1.83);
-
   color: var(--third-text-color);
 }
 .footer-tel__link {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 43px;
   font-family: DM Sans;
   font-style: normal;
   @include font($fs: 12px, $fw: 500, $lh: 1.83);
@@ -122,17 +112,15 @@
   }
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 0;
     @include font($fs: 14px, $fw: 500, $lh: 1.85);
   }
 }
 // копирайт
-.copyright {
-  border-top: 1px solid var(--border-color);
-}
+
 .copyright__text {
-  padding-top: 22px;
-  padding-right: 91px;
-  padding-left: 79px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   font-family: DM Sans;
   font-style: normal;
@@ -140,6 +128,8 @@
   text-align: center;
 
   color: var(--fourth-text-color);
+  border-top: 1px solid var(--border-color);
+
   @media screen and (min-width: 768px) {
     @include font($fs: 14px, $fw: 500, $lh: 1.85, $ls: 0.02em);
     padding-top: 29px;
