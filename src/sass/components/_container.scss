@@ -1,6 +1,9 @@
 .container {
   margin: 0 auto;
-  width: 280px;
+  // width: 280px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
   @media screen and (min-width: 480px) {
     width: 480px;

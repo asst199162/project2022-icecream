@@ -10,12 +10,16 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
   }
 }
 .advantages__item {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     &:not(:first-child) {
       margin-top: 38px;
     }
