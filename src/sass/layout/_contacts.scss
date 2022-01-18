@@ -1,6 +1,6 @@
 .section-contacts {
-  padding-top: 85px;
-  padding-bottom: 115px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-image: linear-gradient(
     to bottom,
     var(--second-btn-color) 11%,
@@ -32,10 +32,6 @@
   }
 }
 .content {
-  @media screen and (max-width: 767px) {
-    margin-bottom: -20px;
-  }
-
   @media screen and (min-width: 768px) {
     display: flex;
     margin-right: -20px;
@@ -44,7 +40,7 @@
     margin-right: -30px;
   }
 }
-.content-wrap {
+.content__item {
   margin-right: auto;
   margin-left: auto;
   width: 220px;
@@ -61,7 +57,7 @@
     padding: 50px 40px 60px;
   }
 }
-.text__box-one {
+.text__item-yellow {
   width: 80px;
   background: #f0d1a5;
   border-radius: 4px;
@@ -70,7 +66,7 @@
     height: 30px;
   }
 }
-.text__box-two {
+.text__item-grin {
   width: 130px;
   background: #c2e297;
   border-radius: 4px;
@@ -127,6 +123,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--fourth-text-color);
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -138,11 +135,17 @@
 .text-desc::after {
   content: '';
   display: block;
-  width: 179px;
+  width: 180px;
   height: 1px;
   border: 1px solid #e1e1e1;
   margin-top: 25px;
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    width: 160px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 235px;
+  }
 }
 .timetable-day {
   font-style: normal;
@@ -176,11 +179,17 @@
 .timetable-time__two::after {
   content: '';
   display: block;
-  width: 179px;
+  width: 180px;
   height: 1px;
   border: 1px solid #e1e1e1;
   margin-top: 25px;
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    width: 160px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 235px;
+  }
 }
 .contacts__tel,
 .contacts__mail {
@@ -188,6 +197,10 @@
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
+  &:hover,
+  &:focus {
+    color: var(--hover-main-btn-color);
+  }
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
@@ -263,7 +276,7 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .btn-bottom__one {
+  .btn-bottom {
     margin-top: 55px;
   }
   .btn-bottom__two {
@@ -356,6 +369,10 @@
   font-style: normal;
   @include font($fs: 16px, $fw: 500, $lh: 1.66, $ls: 0.02em);
   color: var(--fourth-text-color);
+  &:hover,
+  &:focus {
+    color: var(--hover-main-btn-color);
+  }
 }
 .content-menu__text-city {
   @include font($fs: 12px, $fw: 500, $lh: 1.8, $ls: 0.04em);
@@ -502,7 +519,8 @@
   margin-top: 25px;
   &:hover,
   &:focus {
-    background: var(--hover-main-btn-color);
+    color: var(--fourth-text-color);
+    background: var(--hover-second-btn-color);
   }
   @media screen and (min-width: 768px) {
     padding-left: 75px;
