@@ -36,7 +36,7 @@
 }
 // .advantages__img {
 // }
-.advantages__box--milk::before {
+.advantages__item--milk::before {
   content: '';
   background-repeat: no-repeat;
   display: block;
@@ -51,7 +51,7 @@
   }
 }
 
-.advantages__box--apple::before {
+.advantages__item--apple::before {
   content: '';
   background-repeat: no-repeat;
   display: block;
@@ -66,7 +66,7 @@
   }
 }
 
-.advantages__box--candy::before {
+.advantages__item--candy::before {
   content: '';
   background-repeat: no-repeat;
   display: block;
