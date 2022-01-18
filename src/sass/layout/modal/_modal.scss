@@ -1,8 +1,7 @@
 .about-menu__modal-box {
 
-    // width: 100%;
+    width: 100%;
     min-height: 502px;
-    // overflow: scroll;
     background-color: var(--second-title-color);
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -51,15 +50,13 @@
 }
 
 .modal__img {
-    width: 293px;
-    min-height: 232px;
     margin: 0px auto 30px auto;
 }
 
 .about-menu__text {
     font-family: DM Sans;
     font-style: normal;
-    @include font($fs: 14px, $fw: 500, $lh: 1.66, $ls: 0.02em);
+    @include font($fs: 12px, $fw: 400, $lh: 1.66, $ls: 0.02em);
     color: var(--fourth-text-color);
     text-align: center;
     margin-bottom: 30px;
