@@ -48,11 +48,16 @@
     line-height: 1.3;
     font-weight: 700;
     border: none;
+    &:hover,
+    &:focus {
+      background: var(--hover-second-btn-color);
+    }
     @media screen and(min-width: 1200px) {
       margin-left: 110px;
     }
   }
 }
+
 .header__list {
   display: none;
   @media screen and(min-width: 1200px) {
@@ -206,6 +211,10 @@
   background-color: var(--reviews-bckgr-color);
   color: var(--main-btn-color);
   margin-top: 7px;
+  &:hover,
+  &:focus {
+    background: var(--hover-second-btn-color);
+  }
   @media screen and(min-width: 1200px) {
     margin-top: 20px;
     width: 26px;
@@ -235,6 +244,10 @@
   border: none;
   margin-right: 8px;
   z-index: 2;
+  &:hover,
+  &:focus {
+    background: var(--hover-main-btn-color);
+  }
   @media screen and(min-width: 1200px) {
     width: 102px;
     height: 40px;
@@ -264,6 +277,10 @@
   background-color: #ffffff;
   border-radius: 20px;
   z-index: 2;
+  &:hover,
+  &:focus {
+    background: var(--hover-second-btn-color);
+  }
   @media screen and(min-width: 1200px) {
     width: 138px;
     height: 40px;
@@ -316,6 +333,10 @@
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 20px;
+  &:hover,
+  &:focus {
+    background: var(--hover-second-btn-color);
+  }
 }
 .mob-menu__item {
   border-top: 1px solid #e18298;
@@ -328,6 +349,10 @@
   font-weight: 700;
   line-height: 1.3;
   color: var(--main-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .is-hidden {
   visibility: hidden;
@@ -337,9 +362,9 @@
 .is-open {
   transform: translateX(0);
 }
-.current {
-  color: var(--accent-color);
-}
+// .current {
+//   color: var(--accent-color);
+// }
 .container-hero {
   position: relative;
   padding-left: 15px;
