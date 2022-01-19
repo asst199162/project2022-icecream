@@ -301,6 +301,10 @@
   color: var(--main-btn-color);
   transition-property: color, background-color;
   @extend %animation-style;
+  &:hover,
+  &:focus {
+    background: var(--hover-second-btn-color);
+  }
 }
 
 .menu-btn__icon {
