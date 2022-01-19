@@ -130,3 +130,40 @@
                 </ul>
         </div>
 </section>
+
+<!--Modal Buy Now-->
+<div class="backdrop is-hidden" data-buy>
+    <div class="modal-hero__modal-box">
+        <button type="button" class="modal-hero__btn-close" data-buy-close>
+            <svg class="modal-hero__icon" width="14" height="14">
+                <use href="./images/svg/icon.svg#menu-close"></use>
+            </svg>
+        </button>
+        <p class="modal-hero__title">Ice Cream <br> buy it now!</p>
+        <label for="goods" class="label__text-modal">Choose the best one</label>
+        <select id="goods" class="input__form-modal">
+            <option class="input-label__option">Ice cream</option>
+            <option class="input-label__option">Ice coffee</option>
+            <option class="input-label__option">Milkshake</option>
+        </select>
+        <label for="locations" class="label__text-modal">Where will you get it?</label>
+        <select id="locations" class="input__form-modal">
+            <option class="input-label__option">Chicago</option>
+            <option class="input-label__option">Los Angeles</option>
+            <option class="input-label__option">New York</option>
+        </select>
+        <form name="datetime" autocomplete="on" novalidate="">
+            <label class="label__text-modal" for="label__text"> Enter a date and time:</label>
+            <div class="modal-hero__datetime-choice">
+                <input type="text" name="datetime" id="modal-hero__input-date" placeholder="20-01-2022"
+                    class="input__form-modal time-input">
+                <input type="text" name="datatime" placeholder="23:00" class="input__form-modal">
+            </div>
+            <label class="label__input">
+                <span class="label__text-modal">Comment</span>
+                <textarea name="user-text" class="input__form-modal text__form" placeholder="Type text"></textarea>
+            </label>
+        </form>
+        <button type="button" class="modal-hero__btn modal-hero__btn-buy">Buy now</button>
+    </div>
+</div>
