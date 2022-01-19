@@ -35,4 +35,92 @@
       </svg>
     </div>
   </div>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="images/reviews/customer-1.png 1x, images/reviews/customer-1-2x.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              images\reviews\customer-1-tablet.png    1x,
+              images/reviews/customer-1-tablet-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              images/reviews/customer-1-mobile.png    1x,
+              images/reviews/customer-1-mobile-2x.png 2x
+            "
+            media="(max-width: 768px)"
+          />
+          <img src="images/reviews/customer-1-mobile.png" alt="женщина" class="reviews__picture" />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="images/reviews/customer-1.png 1x, images/reviews/customer-1-2x.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              images\reviews\customer-1-tablet.png    1x,
+              images/reviews/customer-1-tablet-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              images/reviews/customer-1-mobile.png    1x,
+              images/reviews/customer-1-mobile-2x.png 2x
+            "
+            media="(max-width: 768px)"
+          />
+          <img src="images/reviews/customer-1-mobile.png" alt="женщина" class="reviews__picture" />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="images/reviews/customer-1.png 1x, images/reviews/customer-1-2x.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              images\reviews\customer-1-tablet.png    1x,
+              images/reviews/customer-1-tablet-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              images/reviews/customer-1-mobile.png    1x,
+              images/reviews/customer-1-mobile-2x.png 2x
+            "
+            media="(max-width: 768px)"
+          />
+          <img src="images/reviews/customer-1-mobile.png" alt="женщина" class="reviews__picture" />
+        </picture>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 </section>
